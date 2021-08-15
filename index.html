@@ -1,20 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- jQuery JS 3.1.0 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/djv@2.1.4/djv.js"></script>
-<script src="weather.js"></script>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
-<table id="table" border="1">
-    test
-</table>
-</body>
-</html>
 
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <!-- jQuery JS 3.1.0 -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mainDiv">
+
+
+        <h1 class="hCenter">Get Weather Information</h1>
+        <hr class="myline">
+        <div>
+            <form class="myForm">
+                <input type="text" required class="formInput" placeholder="Enter Name of City" />
+                <input class="submitBtn" type="submit" value="Get weather">
+            </form>
+
+        </div>
+        <div class="buttonHolder">
+            <button class="getWeatherButton"> Get my location weather
+            </button>
+        </div>
+        <div class="weatherDisplay">
+            <p class="weatherText">
+                No weather data
+            </p>
+        </div>
+
+        <hr class="myline">
+
+        <div class="showLocation">
+            <button class="getLocationButton"> Show location
+            </button>
+
+            <div id="showMap">
+            </div>
+
+
+        </div>
+    </div>
+
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd71HTWkzW8A5GuTcfEIe_Ky9nldamcgE"></script>
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
